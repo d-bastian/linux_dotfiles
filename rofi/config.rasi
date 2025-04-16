@@ -1,0 +1,47 @@
+/* Global settings */
+* {
+    border-width: 2px;           /* Border width */
+    padding: 5px;                /* Padding inside the window */
+    border-color: #444444;       /* Border color */
+    separator-color: #555555;    /* Separator color */
+}
+
+/* Window background and text color */
+window {
+    background-color: #222222;   /* Dark background */
+    border-radius: 5px;          /* Rounded corners */
+}
+
+/* Main box border */
+mainbox {
+    border-width: 1px;
+    border-color: #444444;       /* Border color for the main box */
+}
+
+/* Listview appearance (where the apps are listed) */
+listview {
+    background-color: #2e2e2e;   /* List background */
+    foreground: #f0f0f0;         /* Text color */
+    border-width: 1px;           /* Border width around the list */
+    border-color: #555555;       /* Border color for the list */
+}
+
+/* Input field (where you type to filter) */
+textbox {
+    background-color: #333333;   /* Input field background */
+    foreground: #ffffff;         /* Input field text color */
+    border: none;                /* Remove border around input field */
+}
+
+/* Selected item appearance */
+* {
+    selected-background: #005577;  /* Background of selected item */
+    selected-foreground: #ffffff;  /* Text color of selected item */
+}
+
+/* Active item colors */
+* {
+    active-background: #003344;  /* Background of active item */
+    active-foreground: #ffffff;  /* Text color of active item */
+}
+

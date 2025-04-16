@@ -1,0 +1,10 @@
+font-family = Iosevka NF
+font-size = 16
+
+background = 181818
+foreground = e4e4ef
+
+window-decoration = server
+window-theme = ghostty
+
+adjust-cursor-thickness = 50

@@ -1,0 +1,81 @@
+# Set mod key to Windows
+set $mod Mod4
+
+# Font
+font pango:Iosevka NF 12
+
+# Floating windows
+floating_modifier $mod
+
+bindsym $mod+Return exec --no-startup-id ghostty
+
+# App launcher
+bindsym $mod+d exec rofi -show drun
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Focus movement
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move windows
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Layouts
+bindsym $mod+f fullscreen toggle
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+e layout toggle split
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+
+# Restart / exit i3
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+e exit
+
+# Workspaces
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9
+
+# Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+# Autostart programs
+exec --no-startup-id feh --bg-scale /home/khenzy/Downloads/pexels-simon73-1183099.jpg
+
+# Colors
+client.focused      #3c3f41 #3c3f41 #ffffff #0077cc  
+client.unfocused    #1e1e1e #1e1e1e #888888 #444444  
+client.urgent       #ff4444 #3c3f41 #ffffff #ff0000  
+
