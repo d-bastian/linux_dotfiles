@@ -1,0 +1,17 @@
+[colors.primary]
+background = "0x181818"
+foreground = "0xe4e4ef"
+
+[cursor]
+thickness = 0.5
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "Iosevka NF"
+style = "Regular"
+
+[window]
+decorations = "None"
+dynamic_title = true
