@@ -7,7 +7,7 @@ font pango:Iosevka NF 12
 # Floating windows
 floating_modifier $mod
 
-bindsym $mod+Return exec --no-startup-id ghostty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # App launcher
 bindsym $mod+d exec rofi -show drun
@@ -72,10 +72,16 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 # Autostart programs
-exec --no-startup-id feh --bg-scale /home/khenzy/Downloads/pexels-simon73-1183099.jpg
+exec --no-startup-id feh --bg-scale /home/khenzy/Pictures/images/background01.jpg
+
+# Display settings
+exec --no-startup-id xrandr --dpi 140
+exec --no-startup-id xrandr --output DP-4 --mode 3440x1440 --rate 165.00
+exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 239.75
 
 # Colors
-client.focused      #3c3f41 #3c3f41 #ffffff #0077cc  
-client.unfocused    #1e1e1e #1e1e1e #888888 #444444  
-client.urgent       #ff4444 #3c3f41 #ffffff #ff0000  
+client.focused          #000000 #000000 #ffffff #2e9ef4
+client.unfocused        #000000 #000000 #888888 #292d2e
+
+
 
