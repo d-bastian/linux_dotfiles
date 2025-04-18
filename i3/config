@@ -83,5 +83,9 @@ exec --no-startup-id xrandr --output DP-2 --mode 1920x1080 --rate 239.75
 client.focused          #000000 #000000 #ffffff #2e9ef4
 client.unfocused        #000000 #000000 #888888 #292d2e
 
+# Mouse settings
+exec --no-star
+exec --noxinput set-prop "Razer Razer Viper V3 HyperSpeed Mouse" "Device Accel Constant Deceleration" 2
+
 
 
